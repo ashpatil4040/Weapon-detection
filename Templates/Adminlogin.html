@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='stylepass.css') }}">
+    <script src="https://kit.fontawesome.com/6f9947e6cf.js" crossorigin="anonymous"></script>
+    <title>Weapon Detection| Admin Login </title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='security1.png') }}">
+  </head>
+  <body>
+   <div class="Login-box">
+     <h1>Admin Login</h1>
+     <form class=""  action="/admin_dashboard" method="post">
+       <div class="textbox">
+        <i class="fa-solid fa-user"></i>
+         <input name='email' type="email" id='email' placeholder="Enter Email">
+      </div>
+      <div class="textbox">
+        <i class="fa-solid fa-lock"></i>
+         <input name='password' type="password" placeholder="Password">
+      </div>
+      <input type="submit" class ="btn" value="login">
+     </form>
+
+      
+      <table>
+        <tr>
+          <th class="sign1"><a href="admin_forgotpass" id="d"><div class="sine">Forgot Password</div></a></th>
+          <th class="sign4"><a href="index" id="d"><div class="sine">Back</div></a></th>
+        </tr>
+      </table>
+   </div>
+
+  </body>
+</html>

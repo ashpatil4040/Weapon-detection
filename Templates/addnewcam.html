@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="{{ url_for('static',filename='styleaddcam.css') }}">
+  <script src="https://kit.fontawesome.com/6f9947e6cf.js" crossorigin="anonymous"></script>
+	<title>Weapon Detection| Add new cam </title>
+	<link rel="shortcut icon" href="{{ url_for('static', filename='security1.png') }}">
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+	    <i class="fa-solid fa-shield-halved"></i>
+			<span class="text">Weapon Detection</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="client_dashboard">
+					<i class="fa-solid fa-table-columns" padding=2px></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa-solid fa-circle-plus"></i>
+					<span class="text">Add Cam</span>
+				</a>
+			</li>
+			<li>
+				<a href="video_cam_list">
+					<i class="fa-solid fa-video"></i>
+					<span class="text">Live Cam</span>
+				</a>
+			</li>
+			<li>
+				<a href="clientHistory">
+					<i class="fa-solid fa-clock-rotate-left"></i>
+					<span class="text">History</span>
+				</a>
+			</li>
+
+
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="\login" class="logout">
+					<i class="fa-solid fa-arrow-right-from-bracket"></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<div class="Login-box">
+      <h1>Add Cam</h1>
+      <form class="" action="/addnewcam2" method="post">
+        <div class="textbox">
+          <i class="fa-solid fa-globe"></i>
+          <input type="text" placeholder="rtsp or http" name="protocol">
+       </div>
+       <div class="textbox">
+        <i class="fa-solid fa-map-pin"></i>
+         <input type="text" placeholder="IP Address" name="ip_address">
+       </div>
+       <div class="textbox">
+         <i class="fa-solid fa-user"></i>
+          <input type="text" placeholder="Username" name="username">
+       </div>
+          <div class="textbox">
+         <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Password" name="password">
+       </div>
+			 <div class="textbox">
+         <i class="fa-solid fa-video"></i>
+          <input type="text" placeholder="Cam Name" name="cam_name">
+       </div>
+
+       <input type="submit" class ="btn" value="Add">
+      </form>
+
+
+    </div>
+		<!-- NAVBAR -->
+
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Weapon Detection in a Real Time CCTV </h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Add Cam</a>
+						</li>
+					</ul>
+				</div>
+				<div class='hist'>
+					<style>
+						table {
+  							font-family: arial, sans-serif;
+  							border-collapse: collapse;
+  							width: 100%;
+								}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+				</div>
+				</div>
+			</div>
+
+
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+
+
+	<!--<script src="script.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styleother.css') }}">
+    <script src="https://kit.fontawesome.com/6f9947e6cf.js" crossorigin="anonymous"></script>
+    <title>Weapon Detection| New Pass </title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='security1.png') }}">
+  </head>
+  <body>
+   <div class="Login-box">
+     <h1>New Password</h1>
+       {% if vake=='client' %}
+        <form class="" action="/client_passReset" method="post">
+          <div class="textbox">
+            <i class="fa-solid fa-lock"></i>
+             <input type="password" placeholder="New Password" name='pass2'>
+          </div>
+          <div class="textbox">
+            <i class="fa-solid fa-lock"></i>
+             <input type="password" placeholder="Confirm Password" name='pass1'>
+          </div>
+          <input type="submit" class ="btn" value="Submit">
+            <span class="sign1">
+            <a href="client_otp"id="d"><div class="sine">Back</div></a>
+            </span>
+        {% endif %}
+        {% if vake=='admin' %}
+        <form class="" action="/admin_passReset" method="post">
+          <div class="textbox">
+            <i class="fa-solid fa-lock"></i>
+             <input type="password" placeholder="New Password" name='pass2'>
+          </div>
+          <div class="textbox">
+            <i class="fa-solid fa-lock"></i>
+             <input type="password" placeholder="Confirm Password" name='pass1'>
+          </div>
+          <input type="submit" class ="btn" value="Submit">
+            <span class="sign1">
+            <a href="admin_otp"id="d"><div class="sine">Back</div></a>
+            </span>
+        {% endif %}
+
+   </div>
+
+  </body>
+</html>

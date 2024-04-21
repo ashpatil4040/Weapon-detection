@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- My CSS -->
+	<link rel="stylesheet" href="{{ url_for('static',filename='styleclient.css') }}">
+  <script src="https://kit.fontawesome.com/6f9947e6cf.js" crossorigin="anonymous"></script>
+	<title>Weapon Detection| video </title>
+	<link rel="shortcut icon" href="{{ url_for('static', filename='security1.png') }}">
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class="fa-solid fa-shield-halved"></i>
+			<span class="text">Weapon Detection</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="\client_dashboard">
+					<i class="fa-solid fa-table-columns"></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="addnewcam">
+					<i class="fa-solid fa-circle-plus"></i>
+					<span class="text">Add Cam</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa-solid fa-video"></i>
+					<span class="text">Live Cam</span>
+				</a>
+			</li>
+			<li>
+				<a href="\clientHistory">
+					<i class="fa-solid fa-clock-rotate-left"></i>
+					<span class="text">History</span>
+				</a>
+			</li>
+
+
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="\login" class="logout">
+					<i class="fa-solid fa-arrow-right-from-bracket"></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Weapon Detection in a Real Time CCTV </h1>
+
+				</div>
+
+			</div>
+			<div class="cam">
+				<img id="bg" src="{{ url_for('video_feed') }}">
+				 <!--<img src="url_from('video')" width=50%> -->
+
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+
+
+	<!--<script src="script.js"></script>-->
+</body>
+</html>

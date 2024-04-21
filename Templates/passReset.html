@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='stylepass.css') }}">
+    <script src="https://kit.fontawesome.com/6f9947e6cf.js" crossorigin="anonymous"></script>
+    <title>Weapon Detection| Pass Reset </title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='security1.png') }}">
+  </head>
+  <body>
+   <div class="Login-box">
+     <h3>Password has been reset successfully</h3>
+     {% if vake=='client' %}
+       <form class=""  action="/login" method="post">
+         <input type="submit" class ="btn" value="login">
+       </form>
+     {%endif%}
+     {% if vake=='admin'%}
+       <form class=""  action="/Adminlogin" >
+         <input type="submit" class ="btn" value="login">
+       </form>
+     {% endif %}
+
+   </div>
+
+  </body>
+</html>

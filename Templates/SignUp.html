@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='styleother.css') }}">
+    <script src="https://kit.fontawesome.com/6f9947e6cf.js" crossorigin="anonymous"></script>
+    <title>Weapon Detection| Sign Up </title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='security1.png') }}">
+  </head>
+  <body>
+   <div class="Login-box">
+     <h1>Sign Up</h1>
+     <form class="" action="/login" method="post">
+       <div class="textbox">
+         <i class="fa-solid fa-envelope"></i>
+         <input type="email" placeholder="email" name="email">
+      </div>
+      <div class="textbox">
+       <i class="fa-solid fa-user"></i>
+        <input type="name" placeholder="Client Name" name="name">
+      </div>
+      <div class="textbox">
+        <i class="fa-solid fa-lock"></i>
+         <input type="password" placeholder="Password" name="password">
+      </div>
+         <div class="textbox">
+        <i class="fa-solid fa-lock"></i>
+         <input type="password" placeholder="Confirm Password" name="password2">
+      </div>
+      <input type="submit" class ="btn" value="Submit">
+     </form>
+    <span class="sign1">
+      <a href="login"id="d"><div class="sine">Back</div></a>
+    </span>
+
+   </div>
+
+  </body>
+</html>

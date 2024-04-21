@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="{{ url_for('static',filename='styleclient.css') }}">
+  <script src="https://kit.fontawesome.com/6f9947e6cf.js" crossorigin="anonymous"></script>
+	<title>Weapon Detection| Admin Dashboard</title>
+	<link rel="shortcut icon" href="{{ url_for('static', filename='security1.png') }}">
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+	    <i class="fa-solid fa-shield-halved"></i>
+			<span class="text">Weapon Detection</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class="fa-solid fa-table-columns" padding=2px></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="\Adminhistory">
+					<i class="fa-solid fa-clock-rotate-left"></i>
+					<span class="text">Detection History</span>
+				</a>
+			</li>
+			<li>
+				<a href="clientLists">
+					<i class="fa-solid fa-clock-rotate-left"></i>
+					<span class="text">Client List</span>
+				</a>
+			</li>
+
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="\Adminlogin" class="logout">
+					<i class="fa-solid fa-arrow-right-from-bracket"></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Weapon Detection in a Real Time CCTV </h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+				<div class='hist'>
+					<style>
+						table {
+  							font-family: arial, sans-serif;
+  							border-collapse: collapse;
+  							width: 100%;
+								}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+				</div>
+				</div>
+			</div>
+			<div class="dash1">
+				<p><b>Dashboard :</b> After Login through admin, you can see a Dashboard in front of your screen this is a Dashboard/Home Page of “Weapon Detection|Admin”, where you can navigate through the history of the cams of all clients.
+        </p>
+			  <p><b>Detection History : </b> You can see camera history of clients and picture detected by the camera system in the <a href="Adminhistory">History<i class="fa-solid fa-arrow-up-right-from-square"></i></a> Section. The table contains the client's email, date, time, cam no. (Camera Number), picture.</p>
+				<p><b>Client List : </b> You can see the lists of the clients in the <a href="clientLists">Client Lits<i class="fa-solid fa-arrow-up-right-from-square"></i></a> Section. The table contains the client's email, client's Name, No of camera added by client, Total no of times weapon Detected.</p>
+
+ 		 </div>
+
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+
+
+	<!--<script src="script.js"></script>-->
+</body>
+</html>
